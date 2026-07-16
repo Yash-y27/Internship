@@ -758,3 +758,4 @@ SELECT * FROM inventory;
 SELECT * FROM orders;
 SELECT * FROM order_items;
 SELECT * FROM payments;
+SELECT * FROM customers;
