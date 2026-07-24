@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Step Checkout Form</title>
+</head>
+<body>
+
+<h1>Checkout Form</h1>
+
+<form action="#">
+
+    <fieldset>
+        <legend> Delivery Information</legend>
+
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" autocomplete="given-name" required>
+        <br><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" autocomplete="family-name" required>
+        <br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+        <br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+        <br><br>
+
+        <label for="address">Street Address:</label><br>
+        <input type="text" id="address" name="address" autocomplete="street-address" required>
+        <br><br>
+
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city" autocomplete="address-level2" required>
+        <br><br>
+
+        <label for="state">State:</label><br>
+        <input type="text" id="state" name="state" autocomplete="address-level1" required>
+        <br><br>
+
+        <label for="zip">ZIP Code:</label><br>
+        <input type="text" id="zip" name="zip" autocomplete="postal-code" required>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Step 2: Payment Information</legend>
+
+        <label for="cardname">Cardholder Name:</label><br>
+        <input type="text" id="cardname" name="cardname" autocomplete="cc-name" required>
+        <br><br>
+
+        <label for="cardnumber">Card Number:</label><br>
+        <input type="text" id="cardnumber" name="cardnumber" autocomplete="cc-number" required>
+        <br><br>
+
+        <label for="expiry">Expiry Date:</label><br>
+        <input type="month" id="expiry" name="expiry" autocomplete="cc-exp" required>
+        <br><br>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Confirmation</legend>
+
+        <label>
+            <input type="checkbox" name="terms" required autocomplete="off">I agree to the Terms and Conditions.
+        </label>
+
+        <br><br>
+
+        <label for="notes">Order Notes:</label><br>
+        <textarea id="notes" name="notes" rows="4" cols="40" autocomplete="off"></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Place Order">
+        <input type="reset" value="Reset">
+    </fieldset>
+
+</form>
+
+</body>
+</html>

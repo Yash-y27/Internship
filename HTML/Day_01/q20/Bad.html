@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Mistakes</title>
+</head>
+<body>
+
+    <!--  Skipped heading level -->
+    <h1>Accessibility Demo</h1>
+    <h3>Login Form</h3>
+
+    <!--  Image without alt -->
+    <img src="images/logo.png">
+
+    <!-- Input without label -->
+    <input type="text" placeholder="Enter Name">
+
+    <br><br>
+
+    <!--  Email without label -->
+    <input type="email" placeholder="Enter Email">
+
+    <br><br>
+
+    <!-- Div used as button -->
+    <div>Submit</div>
+
+    <br><br>
+
+    <!-- Clickable image without alt -->
+    <a href="#">
+        <img src="images/home.png">
+    </a>
+
+    <br><br>
+
+    <!--  Link text is unclear -->
+    <a href="about.html">Click Here</a>
+
+    <br><br>
+
+    <!--  Colour-only instruction -->
+    <p>Fields shown in red are required.</p>
+
+    <input type="text">
+
+    <br><br>
+
+    <!--  Table without headers -->
+    <table border="1">
+        <tr>
+            <td>Name</td>
+            <td>Age</td>
+        </tr>
+        <tr>
+            <td>Yash</td>
+            <td>22</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <!-- Missing page landmarks -->
+    <p>Welcome to our website.</p>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Page</title>
+</head>
+<body>
+
+    <h1>Media Page</h1>
+
+    <section>
+        <h2>Video</h2>
+
+        <video width="600" controls poster="images/video-poster.jpg">
+            <source src="videos/sample-video.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Audio</h2>
+
+        <audio controls>
+            <source src="audio/sample-audio.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Responsive Picture</h2>
+
+        <picture>
+            <source
+                media="(min-width: 900px)"
+                srcset="images/img1.png">
+
+            <source
+                media="(min-width: 600px)"
+                srcset="images/img1.png">
+
+            <img
+                src="images/img1.png"
+                alt="Beautiful Nature"
+                width="600">
+        </picture>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Image Gallery</h2>
+
+        <img src="images/img1.png" alt="Photo 1" width="200" loading="lazy">
+        <img src="images/img1.png" alt="Photo 2" width="200" loading="lazy">
+        <img src="images/img1.png" alt="Photo 3" width="200" loading="lazy">
+        <img src="images/img1.png" alt="Photo 4" width="200" loading="lazy">
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Location</h2>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_LINK"
+            width="600"
+            height="400"
+            style="border:0;"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+</body>
+</html>
